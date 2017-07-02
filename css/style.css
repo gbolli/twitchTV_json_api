@@ -1,0 +1,57 @@
+ {
+  border: solid 1px red !important;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 450px;
+  border: solid 1px black;
+}
+
+.navbar {
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+.nav-pills > li > a {
+  font-size: 20px;
+}
+
+#searchArea {
+  text-align: center;
+}
+
+#searchBar {
+  width: 70%;
+  padding-left: 10px;
+}
+
+#twitchStreams {
+  margin-top: 20px;
+}
+
+#streams li {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#streams a {
+  display: inline-block;
+  width: 230px;
+  margin-right: 10px;
+  word-wrap: break-word;
+}
+
+#streams span {
+  font-size: 16px;
+}
+
+#streams .avatar {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
