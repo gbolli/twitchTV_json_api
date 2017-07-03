@@ -8,7 +8,7 @@ body {
 
 .main {
   margin: 0 auto;
-  max-width: 450px;
+  max-width: 600px;
   border: solid 1px black;
 }
 
@@ -37,6 +37,7 @@ body {
 #streams li {
   list-style-type: none;
   font-size: 20px;
+  margin-top: 20px;
 }
 
 #streams a {
@@ -50,8 +51,13 @@ body {
   font-size: 16px;
 }
 
+#streams img {
+  margin-right: 10px;
+}
+
 #streams .avatar {
   height: 50px;
   width: 50px;
+  border-radius: 4px;
   margin-right: 10px;
 }
