@@ -10,14 +10,23 @@ $(document).ready(function() {
   var offline = "Offline";
   var noAcct = "This account does not exist";
   
-  //  All users button
- 
-  
-  //  Online button
-  
-  
-  //  Offline button
-  
+  //  Nav buttons to filter all/online/offline
+
+  $(".nav li").on("click", function() {
+    $(".nav li").removeClass("active");
+    $(this).addClass("active");
+    var status = $(this).attr('id');
+    $(".online, .offline").removeClass("hidden");
+    if (status === "online") {
+      $(".offline").addClass("hidden");
+    } else if (status === "offline") {
+      $(".online").addClass("hidden");
+    }
+  });
+
+  // search bar function
+
+
 
   // create API url function
 
