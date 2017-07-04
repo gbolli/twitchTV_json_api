@@ -110,13 +110,14 @@ $("input").on('keyup', function() {
                 } else {
                     // offline
                     status = offline;
-                    $("#streams").append("<li class='offline'><img class='avatar'src='" + logoUrl + "'><a href='" + twitchUrl + "'>" + displayName + "</a><span>" + status + "</span></li>");
+                    $("#streams").append("<li class='offline'><img class='avatar'src='" + logoUrl + "'><a class='a1' href='" + twitchUrl + "'>" + displayName + "</a><span>" + status + "</span></li>");
                 }
                   
                 } else {
                     // online
                     console.log("Online status");
-                    $("#streams").append("<li class='online'><img class='avatar'src='" + logoUrl + "'><a href='" + twitchUrl + "'>" + displayName + "</a><img src='" + feedImage + "'><span>" + game + "</span></li>");
+                    $("#streams").append("<li class='online'><img class='avatar'src='" + logoUrl + "'><a class='a1' href='" + twitchUrl + "'>" + displayName + "</a><a class='a2' href='" + twitchUrl + "'>" + game + "</a></li>");
+                    // may add img element at later date:  <img src='" + feedImage + "'>
                   }
         }); // end of USER call
      })(i);  // end of enclosing function

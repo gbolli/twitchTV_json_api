@@ -8,7 +8,7 @@ body {
 
 .main {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 550px;
   border: solid 1px black;
 }
 
@@ -40,10 +40,16 @@ body {
   margin-top: 20px;
 }
 
-#streams a {
+#streams .a1 {
   display: inline-block;
-  width: 230px;
+  width: 200px;
   margin-right: 10px;
+  word-wrap: break-word;
+}
+
+#streams .a2 {
+  display: inline-block;
+  width: 180px;
   word-wrap: break-word;
 }
 
