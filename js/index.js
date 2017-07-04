@@ -26,7 +26,18 @@ $(document).ready(function() {
 
   // search bar function
 
-
+$("input").on('keyup', function() {
+  var filter = $(this).val().toUpperCase();
+  console.log(filter);
+  $("#streams > li > a").each(function() {
+    if ($(this).text().toUpperCase().search(filter) > -1) {
+      $(this).parent().show();
+    }
+    else {
+      $(this).parent().hide();
+    }
+  });
+});
 
   // create API url function
 
